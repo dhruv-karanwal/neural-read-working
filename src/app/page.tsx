@@ -1,101 +1,67 @@
-import Image from "next/image";
+"use client";
+
+import React from "react";
+import Navbar from "@/components/sections/Navbar";
+import Hero from "@/components/sections/Hero";
+import Introduction from "@/components/sections/Introduction";
+import SystemWorkflow from "@/components/sections/SystemWorkflow";
+import Architecture from "@/components/sections/Architecture";
+import MultimodalAI from "@/components/sections/MultimodalAI";
+import LivePipeline from "@/components/sections/LivePipeline";
+import Features from "@/components/sections/Features";
+import TechStack from "@/components/sections/TechStack";
+import Applications from "@/components/sections/Applications";
+import Deployment from "@/components/sections/Deployment";
+import ProjectInfo from "@/components/sections/ProjectInfo";
+import Footer from "@/components/sections/Footer";
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      {/* Top Floating Glass Navigation Header */}
+      <Navbar />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+      {/* Main Single Page Application Content Layers */}
+      <main className="flex-grow">
+        {/* Section 1: Futuristic Animated Hero Header */}
+        <Hero />
+
+        {/* Section 2: Core Innovation Problem & Solution Introduction */}
+        <Introduction />
+
+        {/* Section 3: 8-Step Interactive Operational Workflow */}
+        <SystemWorkflow />
+
+        {/* Section 4: 8-Layer Interactive Architecture Blueprint */}
+        <Architecture />
+
+        {/* Section 5: Theoretical Core - Multimodal Fusion Concepts */}
+        <MultimodalAI />
+
+        {/* Section 6: Real-time Dynamic Pipeline Data-Pulse Simulator */}
+        <LivePipeline />
+
+
+
+        {/* Section 8: Technical Feature Grid Matrix */}
+        <Features />
+
+        {/* Section 9: Fused Technology Stack Icons Subsystems */}
+        <TechStack />
+
+        {/* Section 10: Industry Impact Domains Applications */}
+        <Applications />
+
+        {/* Section 11: Scalable Cloud Architecture Deployment Routing */}
+        <Deployment />
+
+        {/* Section 12: Academic Thesis Project Credentials & Stats */}
+        <ProjectInfo />
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+      {/* Futuristic Ambient Bottom Gradient Footer */}
+      <Footer />
+    </>
   );
 }
